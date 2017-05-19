@@ -2,7 +2,7 @@
 title: Fedora21 + hexo + github 搭建个人博客
 date: 2016-08-24 23:01:37
 categories: [教程]
-tags: [linux, hexo, github]
+tags: [hexo]
 ---
 
  介绍自己的配置过程和在配置的时候遇到的各种问题，该文选用的主题是yilia，如果没有js基础，
