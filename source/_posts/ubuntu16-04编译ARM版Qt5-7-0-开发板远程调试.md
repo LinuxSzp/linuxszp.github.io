@@ -42,7 +42,7 @@ QMAKE_NM                = arm-linux-gnueabihf-nm -P	#修改成自己的交叉链
 QMAKE_STRIP             = arm-linux-gnueabihf-strip	#修改成自己的交叉链
 ```
 ### 编译和安装 ###
-configure的参数直接影响make和make install是否会出错，本配置不包括opengl，如果想加入opengl选项，提醒一下，通过apt-get安装的opengl库是不能使用的，你需要将opengl源码使用交叉工具交叉编译一下，生成所需要的opengl交叉库，然后将opengl交叉库简单粗暴的复制到交叉工具链目录里的lib目录下，就能找到库。
+configure的参数直接影响make和make install是否会出错，本配置不包括opengl，只满足基本需求，加入opengl需要做的工作有点多，我会整理一下再发表出来。
 
 qtvirtualkeyboard是Qt5.7.0中自带的一个虚拟键盘，支持中文输入，这里需要将其跳过，因为编译qtvirtualkeyboard间接需要opengl库的支持，不跳过在make install这一步是会出错的。同时，如果没有opengl库，请自觉跳过tests，examples，tools的编译。
 ```bash
